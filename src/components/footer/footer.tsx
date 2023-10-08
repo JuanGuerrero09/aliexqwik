@@ -6,8 +6,8 @@ export default component$(() => {
   const serverTime = useServerTimeLoader();
 
   return (
-    <footer>
-      <div class="container">
+    <footer class="container bg-red-950 w-screen">
+      <div >
         <a href="https://www.builder.io/" target="_blank" class={styles.anchor}>
           <span>Made with ♡ by Builder.io</span>
           <span class={styles.spacer}>|</span>

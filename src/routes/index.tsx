@@ -1,16 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { Categories } from "~/components/categories/categories";
 
-import Hero from "~/components/starter/hero/hero";
+import Hero from "~/components/hero/hero";
 
 export default component$(() => {
   return (
     <>
-    <div class='flex items-center px-8'>
-      <Categories />
+    <div class='flex items-center justify-center pr-8 relative'>
       <Hero />
-
     </div>
     </>
   );

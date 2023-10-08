@@ -19,11 +19,11 @@ const categoriesList: string[] = [
 export const Categories = component$(() => {
   return (
     <>
-      <section class="flex flex-col bg-base-200 p-4 shadow-xl rounded-xl">
-        <h3>Categories</h3>
-        <ul class="menu p-4 w-80 min-h-full text-base-content">
+      <section class="flex flex-col p-4 shadow-xl min-h-screen  bg-red-400 text-white">
+        <h3 class="text-3xl sticky">Categories</h3>
+        <ul class="menu py-6 px-4 w-50 min-h-full ">
           {categoriesList.map((category) => {
-            return <li key={category}>{category}</li>;
+            return <li class="py-1" key={category}>{category}</li>;
           })}
         </ul>
       </section>

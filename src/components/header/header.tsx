@@ -1,6 +1,6 @@
 import { component$, useSignal } from "@builder.io/qwik";
-import { AliexpressLogo } from "../starter/icons/aliexpress";
-import { ShoppingCart } from "../starter/icons/shoppingCart";
+import { AliexpressLogo } from "../icons/aliexpress";
+import { ShoppingCart } from "../icons/shoppingCart";
 import styles from "./header.module.css";
 
 export default component$(() => {
@@ -9,7 +9,7 @@ export default component$(() => {
   return (
     <header
       class={[
-        "w-screen px-10 py-6 flex items-center justify-between gap-3 sticky top-0 z-50 backdrop-blur-2xl bg-stone-700",
+        "w-screen px-10 py-2 flex items-center justify-between gap-3 sticky top-0 z-50 backdrop-blur-2xl bg-red-600",
       ]}
     >
       <div class={styles.logo}>
@@ -17,16 +17,15 @@ export default component$(() => {
           <AliexpressLogo height={50} width={143} />
         </a>
       </div>
-      <div class="flex w-1/2 justify-around">
+      <div class="flex w-1/2 justify-around items-center text-white">
         <input
           type="text"
           placeholder="Type here"
-          class="input input-bordered bg-transparent w-5/6 focus:backdrop-blur-2xl"
+          class="input h-10 input-bordered bg-transparent w-5/6 focus:backdrop-blur-2xl text-white border-white placeholder:text-white"
         />
-        <button class="btn btn-ghost btn-circle">
+        <button class="btn btn-ghost btn-circle h-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            classF="h-5 w-5"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
